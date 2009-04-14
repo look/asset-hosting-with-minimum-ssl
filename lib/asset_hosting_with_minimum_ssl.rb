@@ -25,11 +25,11 @@ class AssetHostingWithMinimumSsl
   
   private
     def asset_host(source)
-      @asset_host % (source.hash % 4)
+      @asset_host % (source.hash % 2)
     end
 
     def ssl_asset_host(source)
-      @ssl_asset_host % (source.hash % 4)
+      @ssl_asset_host % (source.hash % 2)
     end
 
 
